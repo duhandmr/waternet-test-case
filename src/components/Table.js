@@ -5,13 +5,12 @@ import {
   deleteOrder,
   editTableItem,
   setClickedOrder,
-  updateReservationTime,
 } from "../redux/tableSlice";
 import { RiDeleteBin2Line, RiCalendar2Line, RiEdit2Line } from "react-icons/ri";
 import Calendar from "./Calendar";
 import Modal from "./Modal";
 
-const Table = ({ isOpen, onClose }) => {
+const Table = () => {
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 

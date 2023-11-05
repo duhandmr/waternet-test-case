@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import { useDispatch, useSelector } from "react-redux";
-import { disableButton, updateSelectedDate } from "../redux/calendarSlice";
+import { disableButton } from "../redux/calendarSlice";
 import {
   setClickedOrder,
   updateReservationTime,

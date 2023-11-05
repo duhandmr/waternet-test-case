@@ -4,7 +4,7 @@ const initialState = {
   tableData: JSON.parse(localStorage.getItem("tableData")) || [],
   disableButtons: JSON.parse(localStorage.getItem("disableButtons")) || [],
   editItem: null,
-  clickedOrder: null, // Yeni bir durum eklendi
+  clickedOrder: null,
   disabledButtons: []
 };
 

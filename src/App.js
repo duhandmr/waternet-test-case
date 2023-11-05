@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToTable, updateTableData } from './redux/tableSlice';
