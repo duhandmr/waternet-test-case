@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.table-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.add-to-table-top {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.input-full {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.add-to-table-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+textarea,
+input {
+  box-sizing: border-box;
+}
+
+
+.icon {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.icon.calendar {
+    color: red;
+}
+
+.calendar-popup {
+  position: absolute;
+  background: white;
+  padding: 16px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.calendar-popup h2 {
+  margin: 0 0 16px;
+}
+
+.calendar-popup input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.calendar-popup button {
+  background: #0074d9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.calendar-popup button:hover {
+  background: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.weekdays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.weekday {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.weekday p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.disabled-button {
+  background-color: #ccc !important;
+  pointer-events: none !important;
+  cursor: not-allowed !important;
+}
